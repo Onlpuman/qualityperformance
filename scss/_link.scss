@@ -1,0 +1,12 @@
+.link {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 45px;
+	color: #fff;
+
+	&:hover {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+}

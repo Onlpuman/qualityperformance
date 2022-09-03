@@ -1,0 +1,15 @@
+.pop-up-button {
+	display: block;
+	width: 262px;
+	height: 58px;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 24px;
+	background: #FF4B4B;
+	padding: 17px;
+	text-align: center;
+
+	&:hover {
+		box-shadow: 2px 5px 10px #497957;
+	}
+}

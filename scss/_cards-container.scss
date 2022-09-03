@@ -1,0 +1,47 @@
+.cards-container {
+	margin-bottom: 45px;
+
+	h2 {
+		margin-bottom: 40px;
+	}
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 13px;
+		counter-reset: number;
+
+		.card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 198px;
+			font-weight: 400;
+			font-size: 53px;
+			line-height: 62px;
+			color: #fff;
+			background-color: #3ADE4B;
+
+			&:nth-child(1) {
+				flex-grow: 1;
+			}
+
+			&:nth-child(2) {
+				flex-basis: 70%;
+			}
+
+			&:nth-child(3) {
+				flex-basis: 85%;
+			}
+
+			&:nth-child(4) {
+				flex-grow: 1;
+			}
+
+			&::before {
+				content: counter(number);
+				counter-increment: number;
+			}
+		}
+	}
+}
